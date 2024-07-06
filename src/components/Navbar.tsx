@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <nav
       className={cn(
-        "p-1 w-full flex justify-between items-center z-30 bg-gray-200/20 backdrop-blur-sm rounded-xl mb-8 h-14",
+        "py-1 px-2 w-full flex justify-between items-center z-1000 bg-gray-800/40 backdrop-blur-sm rounded-xl mb-8 h-14",
         {
           hidden: path === "/",
         }
@@ -30,7 +30,7 @@ export default function Navbar() {
                   {link.icon}
                 </span>
 
-                <span className="hidden md:block font-bold text-white capitalize">
+                <span className="hidden md:block font-bold text-gray-200 capitalize">
                   {link.name}
                 </span>
               </button>
